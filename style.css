@@ -1,0 +1,50 @@
+body,
+html {
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --stroke-color: #c5d4ff;
+    --stroke-width: 0.4mm;
+    --line-height: 8mm;
+
+}
+
+.page {
+    width: 210mm;
+    height: 297mm;
+}
+
+.columns{
+    background: repeating-linear-gradient(
+        to right,
+        white 0cm,
+        white calc(var(--line-height) - var(--stroke-width)),
+        var(--stroke-color) 0cm,
+        var(--stroke-color) var(--line-height)
+    );
+}
+
+.rows{
+    background: repeating-linear-gradient(
+        to bottom,
+        white 0cm,
+        white calc(var(--line-height) - var(--stroke-width)),
+        var(--stroke-color) 0cm,
+        var(--stroke-color) var(--line-height)
+    );
+}
+
+.page{
+    display: flex;
+    align-items: center;
+}
+
+.half-line{
+    width: 100%;
+    height: 5mm;
+    background-color: rgb(255, 255, 255);
+}
