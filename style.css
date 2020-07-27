@@ -10,7 +10,14 @@ html {
     --stroke-color: #c5d4ff;
     --stroke-width: 0.4mm;
     --line-height: 8mm;
+}
 
+.mm-5{
+    --line-height: 5mm;
+}
+
+.thin{
+    --stroke-width: 0.3mm;
 }
 
 .page {
@@ -21,8 +28,8 @@ html {
 .columns{
     background: repeating-linear-gradient(
         to right,
-        white 0cm,
-        white calc(var(--line-height) - var(--stroke-width)),
+        #ffffff00 0cm,
+        #ffffff00 calc(var(--line-height) - var(--stroke-width)),
         var(--stroke-color) 0cm,
         var(--stroke-color) var(--line-height)
     );
@@ -31,8 +38,8 @@ html {
 .rows{
     background: repeating-linear-gradient(
         to bottom,
-        white 0cm,
-        white calc(var(--line-height) - var(--stroke-width)),
+        #ffffff00 0cm,
+        #ffffff00 calc(var(--line-height) - var(--stroke-width)),
         var(--stroke-color) 0cm,
         var(--stroke-color) var(--line-height)
     );

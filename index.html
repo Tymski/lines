@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartka w linie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-print-only.css" media="print">
 </head>
 
 <body>
+    <h3 class="no-print">Wydruk w pionie • Brak marginesów • Drukuj obraz w tle • A4 • Ctrl+P • Drukuj stronę a nie wszystko :)</h3>
+
+    <h3 class="no-print">Linie przez długość</h3>
     <div class="page columns">
         <div class="half-line"></div>
     </div>
-    <!-- <div class="page rows">
-    </div> -->
+
+    <h3 class="no-print">Linie przez szerokość</h3>
+    <div class="page rows"></div>
+
+    <h3 class="no-print">Kratka 5mm</h3>
+    <div class="page rows mm-5 ">
+        <div class="page columns mm-5 "> </div>
+    </div>
+
+    <h3 class="no-print">Kratka większa</h3>
+    <div class="page rows">
+        <div class="page columns"> </div>
+    </div>
 </body>
 
 </html>
